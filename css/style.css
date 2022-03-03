@@ -1,0 +1,218 @@
+head {
+  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meirio;
+}
+body {
+  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meirio;
+}
+
+/*  header
+--------------------------------*/
+header {
+  width: 100vw;
+  height: 100vh;
+  background: url(../img/1_2F/2F01.JPG) no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+header h1 {
+  width: 200px;
+  height: 70px;
+  display: flex;
+  padding: 30px 0 0 40px;
+}
+header h2 {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+/* ----------main--------- */
+
+/* ----------consept--------- */
+
+.consept {
+  position: relative;
+  background-color: #fdf0f0;
+}
+.consept .box01 {
+  width: 320px;
+  height: 320px;
+  background-color: #25474d;
+  position: absolute;
+  right: 0px;
+}
+.consept .box02 {
+  width: 320px;
+  height: 320px;
+  background-color: #ffffff;
+  position: absolute;
+
+  top: 120px;
+  right: 120px;
+}
+.consept h2 {
+  color: #25474d;
+  font-size: 36px;
+
+  /* position: absolute;
+  top: 250px;
+  left: 220px; */
+  padding: 80px;
+  line-height: 50px;
+  font-family: YuMincho;
+}
+.consept p {
+  color: #25474d;
+  font-size: 26px;
+
+  /* position: absolute;
+  top: 450px;
+  left: 150px; */
+  padding: 120px;
+  line-height: 40px;
+}
+
+/* ----------menu--------- */
+.menu {
+  background: url(../img/背景.png) no-repeat center center;
+  background-size: cover;
+  padding: 80px;
+}
+.menu-text-wrap {
+  max-width: 520px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.menu-text-wrap h2 {
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #25474d;
+}
+
+.menu-text {
+  padding: 12px;
+}
+.menu-text p {
+  font-size: 15px;
+  color: #25474d;
+}
+.time {
+  width: 160px;
+  height: 40px;
+  font-size: 16px;
+  background-color: #25474d;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 20px;
+}
+.time p {
+  padding: 12px;
+  color: #ffffff;
+}
+.btn {
+  display: block;
+  width: 160px;
+  height: 40px;
+  font-size: 16px;
+  border: 2px solid #25474d;
+  background-color: #ffffff;
+  border-radius: 20px;
+  color: #25474d;
+  position: relative;
+
+  /* トランジション */
+  /* transition-property: background-color opacity;
+  transition-duration: 0.5s;
+  transition-delay: 0;
+  transition-timing-function: ease-in-out; */
+}
+.btn-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+.menu-list {
+  margin: 0px 0px px 150px;
+}
+.menu-img-wrap {
+  max-width: 976px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.menu-img {
+  padding: 12px;
+}
+.menu-img img {
+  width: 480px;
+  height: 320px;
+}
+.menu-img p {
+  font-size: 16px;
+  color: #25474d;
+  padding: 20px 0 0 0;
+}
+/* ----------shopinfo--------- */
+
+.shopinfo {
+  background-color: #25474d;
+}
+.shopinfo-wrap h1 {
+  font-size: 40px;
+  color: #ffffff;
+  margin: 0px 0px 40px 150px;
+  padding: 90px 0 0 0;
+}
+
+.shopinfo-wrap h2 {
+  font-size: 24px;
+  color: #ffffff;
+  margin: 40px 150px;
+}
+
+.shopinfo-wrap p {
+  font-size: 15px;
+  color: #ffffff;
+  margin: 40px 0 90px 150px;
+  line-height: 32px;
+}
+.shopinfo-list p {
+  margin: 32px 150px;
+  color: #ffffff;
+  line-height: 32px;
+}
+.shopinfo-list hr {
+  width: 360px;
+  margin: 0 150px;
+}
+.shopinfo-list-wrap {
+  display: flex;
+}
+/* ----------footer--------- */
+
+footer {
+  width: 100%;
+  background-color: #fdf0f0;
+}
+
+.footer-wrap {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-wrap p {
+  font-size: 16px;
+  color: #25474d;
+  margin: auto;
+}
