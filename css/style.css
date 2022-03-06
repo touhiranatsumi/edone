@@ -327,10 +327,11 @@ header .nav-list li {
 .shopinfo-wrap03 {
   display: flex;
   width: 100%;
+  padding: 0 0 40px 0;
 }
 .shopinfo-map {
   width: 40%;
-  width: 300px;
+  width: 400px;
 }
 .shopinfo-map img {
   width: 100%;
