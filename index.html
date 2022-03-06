@@ -13,6 +13,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     />
     <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -20,7 +22,36 @@
       <div>
         <h1><img src="img/1_2F/アートボード 34.png" alt="ロゴ" /></h1>
         <h2><img src="img/1_2F/logo01.png" alt="ロゴ" /></h2>
+        <!-- <figure class="menu-button">
+          <img src="img/グループ 52.svg" alt="メニューボタン" />
+        </figure> -->
+        <div class="menu-button" id="menuButton">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
+      <nav id="nav">
+        <div class="container">
+          <h3>
+            <img
+              src="img/1_2F/アートボード 34.png"
+              alt="ハンバーガーロゴ"
+            />
+          </h3>
+          <ul class="nav-list">
+            <li class="active"><a href="#">CONCEPT</a></li>
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">SHOP INFO</a></li>
+
+            <li>
+              <a href="https://www.instagram.com/cafe.bar_edone" target="_blank"
+                ><i class="fab fa-instagram fa-lg"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <main>
       <section class="consept">
@@ -138,31 +169,36 @@
             〒103-0003 東京都中央区日本橋横山町6-2<br />都営浅草線「東日本橋駅」A1出口徒歩1分
           </p>
         </div>
-
-        <div class="shopinfo-list">
-          <p>TEL&emsp;&emsp;&emsp;&emsp;&emsp;03-6661-9262</p>
-          <hr />
-        </div>
-        <div class="shopinfo-list">
-          <p>営業時間&emsp;&emsp;&emsp;11:30 -22:00</p>
-          <hr />
-        </div>
-        <div class="shopinfo-list">
-          <p>定休日&emsp;&emsp;&emsp;&emsp;土日祝</p>
-          <hr />
-        </div>
-        <div class="shopinfo-list">
-          <p>座席数&emsp;&emsp;&emsp;&emsp;23席</p>
-          <hr />
-        </div>
-        <div class="shopinfo-list">
-          <p>
-            支払い方法&emsp;&emsp;現金<br />&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;クレジットカード<br />&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;電子マネー<br />&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;QR決済
-          </p>
-          <hr />
-        </div>
-        <div class="shopinfo-wrap">
-          <img src="img/1_2F/map.png" alt="map" />
+        <div class="shopinfo-wrap03">
+          <div class="shopinfo-wrap02">
+            <div class="shopinfo-list">
+              <p>TEL&emsp;&emsp;&emsp;&emsp;&emsp;03-6661-9262</p>
+              <hr />
+            </div>
+            <div class="shopinfo-list">
+              <p>営業時間&emsp;&emsp;&emsp;11:30 -22:00</p>
+              <hr />
+            </div>
+            <div class="shopinfo-list">
+              <p>定休日&emsp;&emsp;&emsp;&emsp;土日祝</p>
+              <hr />
+            </div>
+            <div class="shopinfo-list">
+              <p>座席数&emsp;&emsp;&emsp;&emsp;23席</p>
+              <hr />
+            </div>
+            <div class="shopinfo-list">
+              <p>
+                支払い方法&emsp;&emsp;現金<br />&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;クレジットカード<br />&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;電子マネー<br />&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;QR決済
+              </p>
+              <hr />
+            </div>
+          </div>
+          <div class="shopinfo-map">
+            <!-- <figure> -->
+            <img src="img/1_2F/map.png" alt="map" />
+            <!-- </figure> -->
+          </div>
         </div>
       </section>
     </main>
@@ -171,5 +207,9 @@
         <p>Copyrighat @2021 edone.All Righat Reserved.</p>
       </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

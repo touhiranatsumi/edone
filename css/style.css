@@ -5,6 +5,78 @@ body {
   font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meirio;
 }
 
+header .menu-button {
+  display: block;
+  position: fixed; /* 追加 */ /* 変更 */
+  top: 16px;
+  right: 16px;
+  z-index: 10; /* 追加 */
+  width: 32px; /* 追加 */
+  height: 24px; /* 追加 */
+}
+/* 追加 */
+header .menu-button span {
+  position: absolute;
+  width: 32px;
+  height: 4px;
+  background-color: #eeb1b0;
+  border-radius: 4px;
+  /* トランジション */
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-delay: 0;
+  transition-timing-function: ease-in-out;
+}
+/* 追加 */
+header .menu-button span:nth-of-type(1) {
+  top: 0;
+}
+/* 追加 */
+header .menu-button span:nth-of-type(2) {
+  top: 10px;
+}
+/* 追加 */
+header .menu-button span:nth-of-type(3) {
+  top: 20px;
+}
+/* 追加 */
+header .menu-button.active span:nth-of-type(1) {
+  top: 0;
+  transform: translateY(12px) rotate(-45deg);
+}
+/* 追加 */
+header .menu-button.active span:nth-of-type(2) {
+  opacity: 0;
+}
+/* 追加 */
+header .menu-button.active span:nth-of-type(3) {
+  top: 0;
+  transform: translateY(12px) rotate(-135deg);
+}
+a {
+  color: #ffffff;
+}
+/*  animation
+--------------------------------*/
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  /* アニメーションの設定 */
+  animation-name: fade;
+  animation-duration: 1s;
+  animation-delay: 0;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
 /*  header
 --------------------------------*/
 header {
@@ -33,6 +105,57 @@ header h2 {
   left: 0;
   margin: auto;
 }
+/* .menu-button {
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  z-index: 100;
+} */
+
+header nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1; /* 追加 */
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  /* アニメーション */
+  animation: unset;
+  /* display: none; */
+  opacity: 0; /* 追加 */
+  pointer-events: none; /* 追加 */
+}
+header nav.active {
+  opacity: 1; /* 追加 */
+  pointer-events: auto; /* 追加 */
+}
+
+header .nav-list {
+  width: 100%;
+  height: auto;
+  padding: 40px 0 0 0;
+}
+header .nav-list li {
+  text-align: center;
+}
+header h3 {
+  width: 200px;
+  padding: 40px 0 0 0;
+  margin: 0 auto 40px auto;
+}
+
+header h3 img {
+  width: 100%;
+}
+header .nav-list li {
+  font-size: 30px;
+  padding: 20px 9px 20px 9px;
+  height: 64px;
+  color: #ffffff;
+  text-align: center;
+}
+
 /* ----------main--------- */
 
 /* ----------consept--------- */
@@ -52,6 +175,7 @@ header h2 {
   width: 320px;
   height: 320px;
   background-color: #ffffff;
+  background: url(../img/1_2F/plate111.png) no-repeat center center;
   position: absolute;
 
   top: 120px;
@@ -60,11 +184,11 @@ header h2 {
 .consept h2 {
   color: #25474d;
   font-size: 36px;
-
+  padding: 80px 10%;
   /* position: absolute;
   top: 250px;
   left: 220px; */
-  padding: 80px;
+  /* padding: 80px; */
   line-height: 50px;
   font-family: YuMincho;
 }
@@ -186,17 +310,36 @@ header h2 {
   line-height: 32px;
 }
 .shopinfo-list p {
-  margin: 32px 150px;
+  margin: 32px 0 32px 20.833%;
   color: #ffffff;
   line-height: 32px;
 }
 .shopinfo-list hr {
   width: 360px;
-  margin: 0 150px;
+  margin: 0 0 0 20.833%px;
 }
 .shopinfo-list-wrap {
   display: flex;
 }
+.shopinfo-wrap02 {
+  width: 60%;
+}
+.shopinfo-wrap03 {
+  display: flex;
+  width: 100%;
+}
+.shopinfo-map {
+  width: 40%;
+  width: 300px;
+}
+.shopinfo-map img {
+  width: 100%;
+  height: auto;
+}
+.shopinfo-map figure {
+  width: 48%;
+}
+
 /* ----------footer--------- */
 
 footer {
@@ -215,4 +358,113 @@ footer {
   font-size: 16px;
   color: #25474d;
   margin: auto;
+}
+
+@media (max-width: 767px) {
+  header {
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/1_2F/tee10.jpg) no-repeat center center;
+    background-size: cover;
+  }
+  /* ----------main--------- */
+  .consept .box01 {
+    width: 30%; /* 横幅を割合で指定 */
+    height: auto; /* 高さは自動指定 */
+  }
+  .consept .box02 {
+    width: 80%; /* 横幅を割合で指定 */
+    height: auto; /* 高さは自動指定 */
+  }
+  .consept h2 {
+    color: #25474d;
+    font-size: 24px;
+    text-align: center;
+    padding: 80px;
+    line-height: 50px;
+    font-family: YuMincho;
+  }
+  .consept p {
+    color: #25474d;
+    font-size: 14px;
+    text-align: center;
+    padding: 40px;
+    line-height: 40px;
+  }
+
+  .menu-img-wrap {
+    display: block;
+    justify-content: space-evenly;
+  }
+  .menu-img {
+    padding: 20px;
+  }
+  .menu-img img {
+    width: 100%; /* 横幅を割合で指定 */
+    height: auto; /* 高さは自動指定 */
+    /* width: 480px;
+    height: 320px; */
+    text-align: center;
+  }
+  .menu-img p {
+    font-size: 16px;
+
+    padding: 10px;
+  }
+  .shopinfo-wrap h1 {
+    font-size: 24px;
+    text-align: center;
+    padding: 40px;
+    margin: auto;
+  }
+
+  .shopinfo-wrap h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .shopinfo-wrap p {
+    font-size: 15px;
+    color: #ffffff;
+    margin: auto;
+    text-align: center;
+    line-height: 32px;
+  }
+  .shopinfo-list p {
+    font-size: 12px;
+    line-height: 24px;
+    margin: 32px 0 32px 33.333%;
+  }
+  .shopinfo-list hr {
+    width: 240px;
+    margin: 0 0 0 33.333%px;
+  }
+  .shopinfo-wrap03 {
+    display: block;
+    width: 100%;
+  }
+
+  .shopinfo-wrap02 {
+    width: 100%;
+  }
+  .shopinfo-map {
+    width: 100%;
+    width: 400px;
+    margin: auto;
+    padding: 50px;
+  }
+  .shopinfo-map img {
+    width: 100%;
+  }
+  .shopinfo-map figure {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* .shopinfo-wrap img {
+    text-align: center;
+    width: 90%; /* 横幅を割合で指定 */
+  /* height: auto; /* 高さは自動指定 */
+  /* margin: auto;
+  } */
 }
